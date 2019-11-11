@@ -134,6 +134,7 @@ export function uploadImage(actionPayload) {
 }
 
 export const updateProfile = actionPayload => {
+  console.log(actionPayload)
   return (dispatch, getState, sdk) => {
     dispatch(updateProfileRequest());
 

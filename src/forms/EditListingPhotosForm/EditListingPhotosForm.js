@@ -201,7 +201,9 @@ export class EditListingPhotosFormComponent extends Component {
               {uploadImageFailed}
 
               <p className={css.tip}>
-                <FormattedMessage id="EditListingPhotosForm.addImagesTip" />
+                For safety reasons please upload <b>at least one photo of yourself</b> located at
+                your home!
+                {/* <FormattedMessage id="EditListingPhotosForm.addImagesTip" /> */}
               </p>
               {publishListingFailed}
               {showListingFailed}

@@ -45,15 +45,26 @@ export class ProfileSettingsPageComponent extends Component {
     } = this.props;
 
     const handleSubmit = values => {
-      const { firstName, lastName, bio: rawBio } = values;
-
+      const {
+        firstName,
+        lastName,
+        bio: rawBio,
+        // facebookUrl: rawFacebookUrl,
+        // instagramUrl: rawInstagramUrl,
+      } = values;
       // Ensure that the optional bio is a string
       const bio = rawBio || '';
+      // const facebookUrl = rawFacebookUrl || '';
+      // const instagramUrl = rawInstagramUrl || '';
 
       const profile = {
         firstName: firstName.trim(),
         lastName: lastName.trim(),
         bio,
+        // publicData: {
+        //   facebookUrl,
+        //   instagramUrl,
+        // },
       };
       const uploadedImage = this.props.image;
 
@@ -62,12 +73,13 @@ export class ProfileSettingsPageComponent extends Component {
         uploadedImage && uploadedImage.imageId && uploadedImage.file
           ? { ...profile, profileImageId: uploadedImage.imageId }
           : profile;
-
+      console.log('Updated', updatedValues);
       onUpdateProfile(updatedValues);
     };
 
     const user = ensureCurrentUser(currentUser);
-    const { firstName, lastName, bio } = user.attributes.profile;
+    const { firstName, lastName, bio, publicData } = user.attributes.profile;
+    console.log('Public', publicData);
     const profileImageId = user.profileImage ? user.profileImage.id : null;
     const profileImage = image || { imageId: profileImageId };
 
@@ -75,7 +87,14 @@ export class ProfileSettingsPageComponent extends Component {
       <ProfileSettingsForm
         className={css.form}
         currentUser={currentUser}
-        initialValues={{ firstName, lastName, bio, profileImage: user.profileImage }}
+        initialValues={{
+          firstName,
+          lastName,
+          bio,
+          // facebookUrl: publicData.facebookUrl,
+          // instagramUrl: publicData.instagramUrl,
+          // profileImage: user.profileImage,
+        }}
         profileImage={profileImage}
         onImageUpload={e => onImageUploadHandler(e, onImageUpload)}
         uploadInProgress={uploadInProgress}

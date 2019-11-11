@@ -146,7 +146,7 @@ const Footer = props => {
                     <FormattedMessage id="Footer.searchTampere" />
                   </NamedLink>
                 </li>
-                <li className={css.listItem}>
+                {/* <li className={css.listItem}>
                   <NamedLink
                     name="SearchPage"
                     to={{
@@ -169,35 +169,7 @@ const Footer = props => {
                   >
                     <FormattedMessage id="Footer.searchRuka" />
                   </NamedLink>
-                </li>
-              </ul>
-            </div>
-            <div className={css.searchesExtra}>
-              <ul className={css.list}>
-                <li className={css.listItem}>
-                  <NamedLink
-                    name="SearchPage"
-                    to={{
-                      search:
-                        '?address=Kuopio%2C%20Finland&bounds=63.40340329999999%2C28.457629300000008%2C62.592254%2C26.890028099999995&origin=62.89796999999999%2C27.67817249999996',
-                    }}
-                    className={css.link}
-                  >
-                    <FormattedMessage id="Footer.searchKuopio" />
-                  </NamedLink>
-                </li>
-                <li className={css.listItem}>
-                  <NamedLink
-                    name="SearchPage"
-                    to={{
-                      search:
-                        '?address=Mikkeli%2C%20Finland&bounds=62.1990357%2C27.900274999999965%2C61.20955799999999%2C26.82762809999997&origin=61.68872709999999%2C27.27214570000001',
-                    }}
-                    className={css.link}
-                  >
-                    <FormattedMessage id="Footer.searchMikkeli" />
-                  </NamedLink>
-                </li>
+                </li> */}
                 <li className={css.listItem}>
                   <NamedLink
                     name="SearchPage"
@@ -222,7 +194,36 @@ const Footer = props => {
                     <FormattedMessage id="Footer.searchVantaa" />
                   </NamedLink>
                 </li>
+              </ul>
+            </div>
+            <div className={css.searchesExtra}>
+              <ul className={css.list}>
+                {/* <li className={css.listItem}>
+                  <NamedLink
+                    name="SearchPage"
+                    to={{
+                      search:
+                        '?address=Kuopio%2C%20Finland&bounds=63.40340329999999%2C28.457629300000008%2C62.592254%2C26.890028099999995&origin=62.89796999999999%2C27.67817249999996',
+                    }}
+                    className={css.link}
+                  >
+                    <FormattedMessage id="Footer.searchKuopio" />
+                  </NamedLink>
+                </li>
                 <li className={css.listItem}>
+                  <NamedLink
+                    name="SearchPage"
+                    to={{
+                      search:
+                        '?address=Mikkeli%2C%20Finland&bounds=62.1990357%2C27.900274999999965%2C61.20955799999999%2C26.82762809999997&origin=61.68872709999999%2C27.27214570000001',
+                    }}
+                    className={css.link}
+                  >
+                    <FormattedMessage id="Footer.searchMikkeli" />
+                  </NamedLink>
+                </li> */}
+
+                {/* <li className={css.listItem}>
                   <NamedLink
                     name="SearchPage"
                     to={{
@@ -233,7 +234,7 @@ const Footer = props => {
                   >
                     <FormattedMessage id="Footer.searchAhvenanmaa" />
                   </NamedLink>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className={css.extraLinks}>

@@ -12,6 +12,7 @@ import { isUploadImageOverLimitError } from '../../util/errors';
 import { Form, Avatar, Button, ImageFromFile, IconSpinner, FieldTextInput } from '../../components';
 
 import css from './ProfileSettingsForm.css';
+import SocialMediaField from '../../custom/organisms/SocialMediaField';
 
 const ACCEPT_IMAGES = 'image/*';
 const UPLOAD_CHANGE_DELAY = 2000; // Show spinner so that browser has time to load img srcset
@@ -277,6 +278,8 @@ class ProfileSettingsFormComponent extends Component {
                   />
                 </div>
               </div>
+              {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIt14XdWoi9ztDZ3_KWgDFMToqGPtEpA7om9IQnL2VJ-kt4KH8Ig&s" /> */}
+              {/* <SocialMediaField handleSubmit={handleSubmit} {...this.props} /> */}
               <div className={classNames(css.sectionContainer, css.lastSection)}>
                 <h3 className={css.sectionTitle}>
                   <FormattedMessage id="ProfileSettingsForm.bioHeading" />

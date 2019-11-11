@@ -148,9 +148,10 @@
 .tip {
   @apply --marketplaceH5FontStyles;
   flex-shrink: 0;
-  color: var(--matterColorAnti);
+  color: var(--matterColor);
   margin-top: 24px;
   margin-bottom: 60px;
+  font-size: 20px;
 
   @media (--viewportLarge) {
     margin-top: 0;
