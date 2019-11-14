@@ -5,7 +5,7 @@ import helsinkiImage from './images/huvilakatu.jpg';
 
 const Container = styled.a`
   position: relative;
-  max-width: 1060px;
+  max-width: 990px;
   margin: auto;
   display: grid;
   place-content: center;
@@ -20,7 +20,11 @@ const Container = styled.a`
   height: 300px;
   padding: '6rem 4rem';
   cursor: pointer;
-  border-radius: 1rem;
+
+  @media (min-width: 991px) {
+    border-radius: 1rem;
+  }
+  
 `;
 
 const InnerDiv = styled.div`
