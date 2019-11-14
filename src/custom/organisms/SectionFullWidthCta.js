@@ -20,6 +20,7 @@ const Container = styled.a`
   height: 300px;
   padding: '6rem 4rem';
   cursor: pointer;
+  border-radius: 1rem;
 `;
 
 const InnerDiv = styled.div`
