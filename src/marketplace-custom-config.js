@@ -4,44 +4,39 @@
 
 export const amenities = [
   {
-    key: 'towels',
-    label: 'Towels',
+    key: 'wifi',
+    label: 'Wi-Fi',
   },
   {
-    key: 'bathroom',
-    label: 'Bathroom',
+    key: 'clean_sheets_and_towels',
+    label: 'Clean sheets & Towels',
   },
   {
-    key: 'swimming_pool',
-    label: 'Swimming pool',
+    key: 'washing_machine',
+    label: 'Washing machine',
   },
   {
-    key: 'own_drinks',
-    label: 'Own drinks allowed',
+    key: 'dishwasher',
+    label: 'Dishwasher',
   },
   {
-    key: 'jacuzzi',
-    label: 'Jacuzzi',
+    key: 'hairdryer',
+    label: 'Hairdryer',
   },
   {
-    key: 'audiovisual_entertainment',
-    label: 'Audiovisual entertainment',
-  },
-  {
-    key: 'barbeque',
-    label: 'Barbeque',
-  },
-  {
-    key: 'own_food_allowed',
-    label: 'Own food allowed',
+    key: 'coffe_and_tea',
+    label: 'Coffe & Tea',
   },
 ];
 
 export const categories = [
-  { key: 'smoke', label: 'Smoke' },
-  { key: 'electric', label: 'Electric' },
-  { key: 'wood', label: 'Wood' },
-  { key: 'other', label: 'Other' },
+  { key: 'bunk', label: 'Bunk in a shared space' },
+  { key: 'room', label: 'Private room' },
+  { key: 'daytime-stay', label: 'Daytime stay' },
+  // { key: 'smoke', label: 'Smoke' },
+  // { key: 'electric', label: 'Electric' },
+  // { key: 'wood', label: 'Wood' },
+  // { key: 'other', label: 'Other' },
 ];
 
 // Price filter configuration

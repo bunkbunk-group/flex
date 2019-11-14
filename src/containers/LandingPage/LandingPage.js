@@ -19,8 +19,9 @@ import {
 } from '../../components';
 import { TopbarContainer } from '../../containers';
 import SectionFullWidthCta from '../../custom/organisms/SectionFullWidthCta';
-import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
-import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
+import facebookImage from '../../assets/Background_1.png';
+import twitterImage from '../../assets/Background_1.png';
+
 import css from './LandingPage.css';
 
 export const LandingPageComponent = props => {
