@@ -32,7 +32,7 @@ const SectionFullWidthCta = () => {
   return (
     <Container
       bgSrc={helsinkiImage}
-      href="http://localhost:3000/s?address=Helsinki%2C%20Finland&bounds=60.3101563%2C25.01165441%2C60.11100041%2C24.77584986&mapSearch=true"
+      href="/s?address=Helsinki%2C%20Finland&bounds=60.3101563%2C25.01165441%2C60.11100041%2C24.77584986&mapSearch=true"
     >
       <InnerDiv>
         <p style={{ fontWeight: 'bold', fontSize: '30px', marginBottom: '20px' }}>browse</p>
