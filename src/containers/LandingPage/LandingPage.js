@@ -18,8 +18,7 @@ import {
   Footer,
 } from '../../components';
 import { TopbarContainer } from '../../containers';
-import helsinkiImage from './images/helsinki.jpeg';
-
+import SectionFullWidthCta from '../../custom/organisms/SectionFullWidthCta';
 import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
 import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
 import css from './LandingPage.css';
@@ -69,37 +68,7 @@ export const LandingPageComponent = props => {
               </div>
             </li>
             <li>
-              <div
-                style={{
-                  position: 'relative',
-                  maxWidth: '1060px',
-                  margin: 'auto',
-                  // height: '400px',
-                  // background: 'hsl(120, 50%, 50%)',
-                  display: 'grid',
-                  placeContent: 'center',
-                }}
-              >
-                <img
-                  src={helsinkiImage}
-                  alt="Helsinki"
-                  width="100%"
-                  style={{ borderRadius: '1rem', filter: 'brightness(60%)' }}
-                />
-                <div
-                  style={{
-                    fontWeight: 'bolder',
-                    position: 'absolute',
-                    padding: '6rem 4rem',
-                    color: 'white',
-                  }}
-                >
-                  <p style={{ fontWeight: 'bold', fontSize: '30px', marginBottom: '20px' }}>
-                    browse
-                  </p>
-                  <p style={{ fontSize: '60px' }}>bunks in Helsinki</p>
-                </div>
-              </div>
+              <SectionFullWidthCta />
             </li>
             <li className={css.section}>
               <div className={css.sectionContent}>
