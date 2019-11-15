@@ -18,7 +18,7 @@ import {
   Footer,
 } from '../../components';
 import { TopbarContainer } from '../../containers';
-import SectionFullWidthCta from '../../custom/organisms/SectionFullWidthCta';
+// import SectionFullWidthCta from '../../custom/organisms/SectionFullWidthCta';
 import facebookImage from '../../assets/Background_1.png';
 import twitterImage from '../../assets/Background_1.png';
 
@@ -68,9 +68,9 @@ export const LandingPageComponent = props => {
                 <SectionLocations />
               </div>
             </li>
-            <li>
+            {/* <li>
               <SectionFullWidthCta />
-            </li>
+            </li> */}
             <li className={css.section}>
               <div className={css.sectionContent}>
                 <SectionHowItWorks />
