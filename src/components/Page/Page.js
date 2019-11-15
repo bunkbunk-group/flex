@@ -10,8 +10,8 @@ import { metaTagProps } from '../../util/seo';
 import { canonicalRoutePath } from '../../util/routes';
 import { CookieConsent } from '../../components';
 
-import facebookImage from '../../assets/saunatimeFacebook-1200x630.jpg';
-import twitterImage from '../../assets/saunatimeTwitter-600x314.jpg';
+import facebookImage from '../../assets/Background_1.png';
+import twitterImage from '../../assets/Background_1.png';
 import css from './Page.css';
 
 const preventDefault = e => {
@@ -119,12 +119,14 @@ class PageComponent extends Component {
     const metaToHead = metaTagProps({
       author,
       contentType,
-      description: metaDescription,
+      // description: metaDescription,
+      description: 'Book bunks everywhere',
       facebookImages: facebookImgs,
       twitterImages: twitterImgs,
       published,
       tags,
-      title: metaTitle,
+      // title: metaTitle,
+      title: 'bunkbunk',
       twitterHandle,
       updated,
       url: canonicalUrl,
