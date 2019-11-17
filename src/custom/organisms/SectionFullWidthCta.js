@@ -11,7 +11,7 @@ const SectionFullWidthCta = () => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       style={{
-        maxWidth: '1135px',
+        maxWidth: '1056px',
         margin: 'auto',
         display: 'grid',
         placeContent: 'center',
@@ -20,7 +20,7 @@ const SectionFullWidthCta = () => {
         cursor: 'pointer',
       }}
     >
-      <div style={{ padding: '0 2rem', position: 'relative' }}>
+      <div style={{ position: 'relative' }}>
         <img
           src={helsinkiImage}
           alt="Landing page CTA"
@@ -42,11 +42,11 @@ const SectionFullWidthCta = () => {
             color: 'white',
             display: 'grid',
             alignContent: 'center',
-            paddingLeft: '6rem',
+            paddingLeft: '10%',
           }}
         >
-          <p style={{ fontWeight: 'bold', fontSize: '30px', marginBottom: '20px' }}>browse</p>
-          <p style={{ fontSize: '70px', fontWeight: 'bolder', lineHeight: '60px' }}>
+          <p style={{ fontWeight: 'bold', fontSize: '2rem', marginBottom: '10px' }}>browse</p>
+          <p style={{ fontSize: '3rem', fontWeight: 'bolder', lineHeight: '2.5rem' }}>
             bunks in Helsinki
           </p>
         </div>
