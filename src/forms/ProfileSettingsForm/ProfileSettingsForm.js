@@ -279,7 +279,7 @@ class ProfileSettingsFormComponent extends Component {
                 </div>
               </div>
               {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIt14XdWoi9ztDZ3_KWgDFMToqGPtEpA7om9IQnL2VJ-kt4KH8Ig&s" /> */}
-              {/* <SocialMediaField handleSubmit={handleSubmit} {...this.props} /> */}
+              <SocialMediaField handleSubmit={handleSubmit} {...this.props} />
               <div className={classNames(css.sectionContainer, css.lastSection)}>
                 <h3 className={css.sectionTitle}>
                   <FormattedMessage id="ProfileSettingsForm.bioHeading" />

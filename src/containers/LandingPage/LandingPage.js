@@ -19,8 +19,8 @@ import {
 } from '../../components';
 import { TopbarContainer } from '../../containers';
 import SectionFullWidthCta from '../../custom/organisms/SectionFullWidthCta';
-import facebookImage from '../../assets/Background_1.png';
-import twitterImage from '../../assets/Background_1.png';
+import facebookImage from '../../assets/Background_1.jpg';
+import twitterImage from '../../assets/Background_1.jpg';
 
 import css from './LandingPage.css';
 

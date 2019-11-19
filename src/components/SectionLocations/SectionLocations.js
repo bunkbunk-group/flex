@@ -8,7 +8,7 @@ import { NamedLink } from '../../components';
 
 import css from './SectionLocations.css';
 
-import bunkImage from './images/bunk.jpg';
+import bunkImage from './images/bunk.jpeg';
 import roomsImage from './images/rooms.jpeg';
 import daytimeStayImage from './images/daytimeStay.jpeg';
 
