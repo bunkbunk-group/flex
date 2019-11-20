@@ -24,8 +24,8 @@ export const amenities = [
     label: 'Hairdryer',
   },
   {
-    key: 'coffe_and_tea',
-    label: 'Coffe & Tea',
+    key: 'coffee_and_tea',
+    label: 'Coffee & Tea',
   },
 ];
 
